@@ -36,8 +36,7 @@ public class LicenseServiceControllerTest {
     public void postLicens() throws Exception{
         mockMvc.perform(post("/v1/organizations/10/licenses/10")
                 .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-        ;
+                .andExpect(status().isOk());
 
     }
     @Test
